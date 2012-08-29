@@ -1,0 +1,22 @@
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="toDoClient.css"/>
+    <script type="text/javascript" src="toDoClient.js"></script>
+</head>
+<body>
+<fieldset class="createToDoSection">
+    <legend>Create a new task</legend>
+    <label>task:</label>
+    <input type="text" value="" class="toDoName"/>
+    <input type="button" value="Create" class="toDoCreateButton" onclick="createToDoClickListener()"/>
+</fieldset>
+<fieldset class="pendingToDoSection">
+    <legend>Pending tasks</legend>
+    <table class="pendingToDoTable"></table>
+</fieldset>
+<fieldset class="doneToDoSection">
+    <legend>Done tasks</legend>
+    <table class="doneToDoTable"></table>
+</fieldset>
+</body>
+</html>

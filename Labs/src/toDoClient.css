@@ -1,0 +1,13 @@
+.createToDoSection, .pendingToDoSection, .doneToDoSection {
+    width: 800px;
+    padding: 15px;
+    margin: 15px;
+}
+
+.toDoName {
+    width: 500px;
+}
+
+.toDoCreateButton, .toDoDoneButton {
+    float: right;
+}
