@@ -1,1 +1,14 @@
-hello
+All the source files are under "src" directory.
+
+This is a working prototype of a simple To-Do list application, in which one can perform following actions:
+
+1. Create a new To-Do
+2. Mark a To-Do as Done
+
+Future Enhancements:
+
+1. Add due-date aspect
+2. Sort by due-date
+3. Modify an existing To-Do
+4. Delete a To-Do
+5. Add user specific To-Dos (Login based)
