@@ -21,6 +21,10 @@ function createDoneToDoClickListener(id) {
 
 function createPendingToDos() {
     var name = document.getElementsByClassName('toDoName')[0].value;
+    if (name.trim() == '') {
+        alert('Please enter task description.');
+        return;
+    }
     var xmlHttpReq = new XMLHttpRequest();
     xmlHttpReq.open("POST", "http://localhost:8124/createPending", true);
     xmlHttpReq.send("name=" + name);

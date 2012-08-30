@@ -74,18 +74,14 @@ var filePath = '.' + request.url;
         else {
             response.writeHead(200, { 'Content-Type': contentType });
             response.write("[");
-            console.log("[");
             toDoList.forEach(function(obj) {
                 if (!obj.done && (filePath == './getPending' || filePath == './createPending')
                     || obj.done && (filePath == './getDone' || filePath == './createDone')) {
                     response.write(JSON.stringify({ name: obj.name, done: obj.done, id: obj.id }));
-                    console.log(JSON.stringify({ name: obj.name, done: obj.done, id: obj.id }));
                     response.write(",");
-                    console.log(",");
                 }
             });
             response.end("]");
-            console.log("]");
         }
     });
 
